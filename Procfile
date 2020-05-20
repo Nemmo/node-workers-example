@@ -1,2 +1,4 @@
 web: node server.js
-worker: node worker.js
+parse: node parse.js
+sentiment: node sentiment.js
+classify: node classify.js

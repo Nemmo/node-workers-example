@@ -7,10 +7,14 @@
   "dependencies": {
     "bull": "^3.7.0",
     "express": "^4.16.4",
-    "foreman": "^3.0.1",
-    "throng": "^4.0.0"
+    "foreman": "^3.0.1"
   },
   "scripts": {
-    "start": "nf start"
+    "start": "nf start",
+    "start-scaled": "nf start web=1,parse=1,classify=3,sentiment=3",
+    "server": "node server.js",
+    "parse": "node parse.js",
+    "classify": "node classify.js",
+    "sentiment": "node sentiment.js"
   }
 }
